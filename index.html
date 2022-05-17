@@ -5,10 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Barrie Radiator</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<script src="script.js"></script>
 	</head>
 	<body>
+		<nav>
+			
+			<a class="nav-link" id="header-link-header" href="/" onclick="displayIndex()">Header</a>
+			<a class="nav-link" id="header-link-home" href="/" onclick="displayIndex()">Home</a>
+			<a class="nav-link" id="header-link-about-us" href="/about-us" onclick="displayAboutUs()">About Us</a>
+			
+		</nav>
 		<main>
-			<h1 class="text-3xl font-bold underline">Barrie Radiator</h1>
+			<h1 class="text-3xl font-bold underline" id="header">Barrie Radiator</h1>
 		</main>
 	</body>
 </html>
