@@ -1,3 +1,8 @@
 a.nav-link {
 	background-color: salmon;
 }
+
+div.body-content-container {
+	width: 80%;
+	margin: auto;
+}
