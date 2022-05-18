@@ -1,8 +1,32 @@
-a.nav-link {
-	background-color: salmon;
-}
+
 
 div.body-content-container {
+	#background-color: brown;
 	width: 80%;
 	margin: auto;
+}
+
+div.navbar {
+	#background-color: cyan;
+	padding: 0.5%;
+	margin: 1%;
+}
+
+a.nav-link {
+	font-size: 1vw;
+	border: solid 0.1em black;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+a.nav-brand {
+	font-size: 1.5vw;
+	padding: auto;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	#background-color: purple;
+}
+
+body {
+	#background-color: orange;
 }

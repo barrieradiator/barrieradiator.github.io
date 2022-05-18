@@ -8,21 +8,22 @@
 		<link rel="stylesheet" href="main.css" type="text/css">
 		<script src="script.js"></script>
 	</head>
-	<body>
+	<body onload="checkUrlAndLoadCorrespondingDisplay()">
 		<nav>
-			
-			<a class="nav-link" id="header-link-header" href="/" onclick="displayIndex()">Header</a>
-			<a class="nav-link" id="header-link-home" href="#home" onclick="displayHome()">Home</a>
-			<a class="nav-link" id="header-link-about-us" href="#about-us" onclick="displayAboutUs()">About Us</a>
-			<a class="nav-link" id="header-link-contact-us" href="#contact-us" onclick="displayContactUs()">Contact Us</a>
-			<a class="nav-link" id="header-link-find-us" href="#find-us" onclick="displayFindUs()">Find Us</a>
+			<div class="navbar">
+				<a class="nav-brand rounded-full" id="header-link-header" href="/" onclick="displayIndex()">Barrie Radiator</a>
+				<a class="nav-link rounded-full" id="header-link-home" href="#home" onclick="displayHome()">Home</a>
+				<a class="nav-link rounded-full" id="header-link-about-us" href="#about-us" onclick="displayAboutUs()">About Us</a>
+				<a class="nav-link rounded-full" id="header-link-contact-us" href="#contact-us" onclick="displayContactUs()">Contact Us</a>
+				<a class="nav-link rounded-full" id="header-link-find-us" href="#find-us" onclick="displayFindUs()">Find Us</a>
+			</div>
 			
 		</nav>
 		<main>
 			<div class="body-content-container">
 				<h1 class="text-3xl font-bold underline" id="header">Barrie Radiator</h1>
 				
-				<p id="main-body-paragraph">Default Home Page Data</p>
+				<p id="main-body-paragraph"></p>
 			</div>
 		</main>
 	</body>
