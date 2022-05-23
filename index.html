@@ -4,27 +4,29 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Barrie Radiator</title>
-		<script src="https://cdn.tailwindcss.com"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<link rel="stylesheet" href="main.css" type="text/css">
 		<script src="script.js"></script>
 	</head>
 	<body onload="checkUrlAndLoadCorrespondingDisplay()">
-		<nav>
-			<div class="navbar">
-				<a class="nav-brand rounded-full" id="header-link-header" href="/" onclick="displayIndex()">Barrie Radiator</a>
-				<a class="nav-link rounded-full" id="header-link-home" href="#home" onclick="displayHome()">Home</a>
-				<a class="nav-link rounded-full" id="header-link-about-us" href="#about-us" onclick="displayAboutUs()">About Us</a>
-				<a class="nav-link rounded-full" id="header-link-contact-us" href="#contact-us" onclick="displayContactUs()">Contact Us</a>
-				<a class="nav-link rounded-full" id="header-link-find-us" href="#find-us" onclick="displayFindUs()">Find Us</a>
-			</div>
-			
-		</nav>
-		<main>
-			<div class="body-content-container">
-				<h1 class="text-3xl font-bold underline" id="header">Barrie Radiator</h1>
-				
-				<p id="main-body-paragraph"></p>
-			</div>
-		</main>
+		<div class="container">
+			<nav>
+				<div class="navbar">
+					<a class="nav-brand" id="header-link-header" href="" onclick="displayIndex()">Barrie Radiator</a>
+					<a class="nav-link rounded-full" id="header-link-home" href="#home" onclick="displayHome()">Home</a>
+					<a class="nav-link rounded-full" id="header-link-about-us" href="#about-us" onclick="displayAboutUs()">About Us</a>
+					<a class="nav-link rounded-full" id="header-link-contact-us" href="#contact-us" onclick="displayContactUs()">Contact Us</a>
+					<a class="nav-link rounded-full" id="header-link-find-us" href="#find-us" onclick="displayFindUs()">Find Us</a>
+					<a class="nav-link rounded-full" id="header-link-services" href="#services" onclick="displayServices()">Services</a>
+					<a class="nav-link rounded-full" id="header-link-current-sales" href="#current-sales" onclick="displayCurrentSales()">Current Sales</a>
+				</div>
+			</nav>
+			<main>
+				<div class="body-content-container">
+					<h1 id="header">Barrie Radiator</h1>
+					<p id="main-body-paragraph"></p>
+				</div>
+			</main>
+		</div>
 	</body>
 </html>
