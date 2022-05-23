@@ -88,7 +88,7 @@ function checkUrlAndLoadCorrespondingDisplay() {
 	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html" || window.location.href == "https://barrieradiator.github.io/" || window.location.href == "domain.com") {
 		displayIndex();
 	}
-	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#about-us" || window.location.href == "https://barrierabiator.github.io/#about-us" || window.location.href == "domain.com#about-us") {
+	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#about-us" || window.location.href == "https://barrieradiator.github.io/#about-us" || window.location.href == "domain.com#about-us") {
 		displayAboutUs();
 	}
 	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#contact-us" || window.location.href == "https://barrieradiator.github.io/#contact-us" || window.location.href == "domain.com#contact-us") {
