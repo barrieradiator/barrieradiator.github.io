@@ -85,22 +85,22 @@ function checkUrlAndLoadCorrespondingDisplay() {
 	if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#home" || window.location.href == "https://barrierabiator.github.io/#home" || window.location.href == "domain.com#home") {
 		displayHome();
 	}
-	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html" || window.location.href == "https://barrierabiator.github.io" || window.location.href == "domain.com") {
+	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html" || window.location.href == "https://barrieradiator.github.io" || window.location.href == "domain.com") {
 		displayIndex();
 	}
 	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#about-us" || window.location.href == "https://barrierabiator.github.io/#about-us" || window.location.href == "domain.com#about-us") {
 		displayAboutUs();
 	}
-	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#contact-us" || window.location.href == "https://barrierabiator.github.io/#contact-us" || window.location.href == "domain.com#contact-us") {
+	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#contact-us" || window.location.href == "https://barrieradiator.github.io/#contact-us" || window.location.href == "domain.com#contact-us") {
 		displayContactUs();
 	}
-	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#find-us" || window.location.href == "https://barrierabiator.github.io/#find-us" || window.location.href == "domain.com#find-us") {
+	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#find-us" || window.location.href == "https://barrieradiator.github.io/#find-us" || window.location.href == "domain.com#find-us") {
 		displayFindUs();
 	}
-	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#services" || window.location.href == "https://barrierabiator.github.io/#services" || window.location.href == "domain.com#services") {
+	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#services" || window.location.href == "https://barrieradiator.github.io/#services" || window.location.href == "domain.com#services") {
 		displayServices();
 	}
-	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#current-sales" || window.location.href == "https://barrierabiator.github.io/#current-sales" || window.location.href == "domain.com#current-sales") {
+	else if(window.location.href == "file:///D:/Dev/Paid%20Work/2022/05%20-%20May/Barrie%20Radiator/barrieradiator.github.io/index.html#current-sales" || window.location.href == "https://barrieradiator.github.io/#current-sales" || window.location.href == "domain.com#current-sales") {
 		displayCurrentSales();
 	}
 	else {
