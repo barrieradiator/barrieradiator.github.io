@@ -115,27 +115,27 @@ function checkUrlAndLoadCorrespondingDisplay() {
 	index_title.innerText = WEBSITE_NAME;
 	
 	if(urlParams.has('fbclid')) {
-		window.location = "https://barrie-radiator.github.io";
+		window.location = "https://barrieradiator.github.io";
 	}	
-	else if(window.location.href == INDEX_HTML_PATH || window.location.href == "https://barrie-radiator.github.io/") {
+	else if(window.location.href == INDEX_HTML_PATH || window.location.href == "https://barrieradiator.github.io/") {
 		displayIndex();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#archive" || window.location.href == "https://barrie-radiator.github.io/#archive") {
+	else if(window.location.href == INDEX_HTML_PATH + "#archive" || window.location.href == "https://barrieradiator.github.io/#archive") {
 		displayArchive();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#about-us" || window.location.href == "https://barrie-radiator.github.io/#about-us") {
+	else if(window.location.href == INDEX_HTML_PATH + "#about-us" || window.location.href == "https://barrieradiator.github.io/#about-us") {
 		displayAboutUs();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#contact-us" || window.location.href == "https://barrie-radiator.github.io/#contact-us") {
+	else if(window.location.href == INDEX_HTML_PATH + "#contact-us" || window.location.href == "https://barrieradiator.github.io/#contact-us") {
 		displayContactUs();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#current-sales" || window.location.href == "https://barrie-radiator.github.io/#current-sales" || window.location.href == "domain.com#merchandise") {
+	else if(window.location.href == INDEX_HTML_PATH + "#current-sales" || window.location.href == "https://barrieradiator.github.io/#current-sales" || window.location.href == "domain.com#merchandise") {
 		displayCurrentSales();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#current-prices" || window.location.href == "https://barrie-radiator.github.io/#current-prices" || window.location.href == "domain.com#sponsors") {
+	else if(window.location.href == INDEX_HTML_PATH + "#current-prices" || window.location.href == "https://barrieradiator.github.io/#current-prices" || window.location.href == "domain.com#sponsors") {
 		displayCurrentPrices();
 	}
-	else if(window.location.href == INDEX_HTML_PATH + "#faq" || window.location.href == "https://barrie-radiator.github.io/#faq" || window.location.href == "domain.com#contact") {
+	else if(window.location.href == INDEX_HTML_PATH + "#faq" || window.location.href == "https://barrieradiator.github.io/#faq" || window.location.href == "domain.com#contact") {
 		displayFAQ();
 	}
 	else {
