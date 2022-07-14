@@ -1,78 +1,224 @@
 <!doctype html>
 <html lang="en">
+
 	<head>
+	
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Barrie Radiator</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-		<link rel="stylesheet" href="main.css" type="text/css">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="preload" href="images/alapalooza_2022_poster.jpg" as="image"> 
+		<title id="title"></title>
+		
 	</head>
+	
 	<body onload="checkUrlAndLoadCorrespondingDisplay()">
-	<script src="script.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-		<div class="container">
-			<nav class="navbar navbar-expand-lg bg-light">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="" onclick="displayIndex()">Barrie Radiator</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" id="header-link-home" href="#home" onclick="displayHome()">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="header-link-about-us" href="#about-us" onclick="displayAboutUs()">About Us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="header-link-contact-us" href="#contact-us" onclick="displayContactUs()">Contact Us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="header-link-find-us" href="#find-us" onclick="displayFindUs()">Find Us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="header-link-services" href="#services" onclick="displayServices()">Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="header-link-current-sales" href="#current-sales" onclick="displayCurrentSales()">Current Sales</a>
-							</li>
+	
+		<script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+		<nav class="navbar navbar-expand-lg bg-light">
+		
+			<div class="container">
+			
+				<a class="navbar-brand" href="" onclick="displayIndex()" id="brand-title">Alapalooza</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">	
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-archive" href="#archive" onclick="displayArchive()">Archive</a>
+						</li>	
+						<li class="nav-item dropdown">	
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Our Company
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">								
+								<li>
+									<a class="dropdown-item" id="header-link-about-us" href="#about-us" onclick="displayAboutUs()">About Us</a>
+								</li>				
+								<li>
+									<a class="dropdown-item" id="header-link-contact-us" href="#contact-us" onclick="displayContactUs()">Contact Us</a>
+								</li>	
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-current-sales" href="#current-sales" onclick="displayCurrentSales()">Current Sales</a>
+						</li>					
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-current-prices" href="#current-prices" onclick="displayCurrentPrices()">Current Prices</a>
+						</li>					
+						<li class="nav-item">
+							<a class="nav-link" id="header-link-faq" href="#faq" onclick="displayFAQ()">FAQ</a>
+						</li>										
+					</ul>
+					
+				</div>
+
+			</div>
+					
+		</nav>
+				
+		<main>
+		
+			<div class="container">
+			
+				<hr>
+					
+				<div id="page-index" hidden>
+					
+					<h1 id="header-index">
+						<strong id="index-title"></strong>
+					</h1>
+					
+					<p>If you're looking to book an appointment with us, please give us a call at <a href="tel:9054341633">(905)434-1633</a>, and we'd be happy to schedule an appointment for you!</p>
+					
+					<p>We're open Monday-Friday 8am - 4pm</p>
+					
+					<p class="note">!!NOTE!!: Colour schemes, logos, and pictures should all be added (if applicable). Adds more personality to the website, makes it more trustworthy, and prettier. Im not the best with colour schemes, but I can easily throw one together based on your logos colours (if you have one)</p>
+				</div>
+					
+				<div id="page-archive" hidden>
+					
+					<div>
+					
+						<h1 id="header-archive">
+							<strong>Archive	</strong>
+						</h1>
+						
+						<hr>
+						
+						<ul>
+							<li>January - New Years Special (Windshield Wipers)</li>
+							<li>February - Valentines Special (Tire Pressure Check)</li>
+							<li>March - St. Patrick's Day Special (??)</li>
+							<li>April - Anniversary Special</li>
+							<li>May - Spring Checkup (Air Conditioning)</li>
+							<li>June - Holiday (??Safety Frontend??)</li>
+							<li>July - Canada Day Special (Brakes)</li>
+							<li>August - Summer Special (Window Cleaning)</li>
+							<li>September - Back to School Special (Exhaust)</li>
+							<li>October - Halloween Special (Antifreeze + Winter Checkup)</li>
+							<li>November - Birthday Special (??Heating??)</li>
+							<li>December - Christmas Special (??)</li>
 						</ul>
+						
 					</div>
+					
 				</div>
-			</nav>
-			<main class="container">
-				<div class="container-fluid">
-					<div id="page-index" hidden>
-						<h1 id="header">Barrie Radiator</h1>
-						<p id="main-body-paragraph">Index</p>
-					</div>
-					<div id="page-home" hidden>
-						<h1 id="header">Barrie Radiator</h1>
-						<p id="main-body-paragraph">Default Home Page Data</p>
-					</div>
-					<div id="page-about-us" hidden>
-						<h1 id="header">About Us</h1>
-						<p id="main-body-paragraph">Gerry is one of 2 licensed mechanics! and other text data goes here. Images can go here also.</p>
-					</div>
-					<div id="page-contact-us" hidden>
-						<h1 id="header">Contact Us</h1>
-						<p id="main-body-paragraph">Contact Us: <br>Email: <a href='mailto:mail@mail.com'>mail@mail.com</a> <br>Phone: <a href='tel:9051234567'>(905)123-4567</a></p>
-					</div>
-					<div id="page-find-us" hidden>
-						<h1 id="header">Find Us</h1>
-						<p id="main-body-paragraph">You can find us at 123 main street!<br>(If you wish, we could add google maps to this page.)</p>
-					</div>
-					<div id="page-services" hidden>
-						<h1 id="header">Services</h1>
-						<p id="main-body-paragraph">Our services are as follows:<br>(This could be an image, a PDF, or just a text menu.)</p>
-					</div>
-					<div id="page-current-sales" hidden>
-						<h1 id="header">Current Sales</h1>
-						<p id="main-body-paragraph">Here's our current sales prices!<br>(This could be an image, a PDF, or just a text menu.)</p>
-					</div>
+				
+				<div id="page-about-us" hidden>
+					
+					<div>
+					
+						<h1 id="header-about-us"><strong>About Us</strong></h1>
+
+						<hr>
+						
+						<p>Barrie Radiator has been a family run business since 1984. We're a small, friendly, and personal 2-bay shop working primarily on domestic cars and pickups, specializing in radiators and air conditioning.</p>
+						<p class="note">maybe add a couple of images of the shop, perhaps a picture of Gerry? needs more content.</p>
+				
+					</div>				
+				
 				</div>
-			</main>
-		</div>
+				
+				<div id="page-contact-us" hidden>
+				
+					<h1 id="header-contact-us"><strong>Contact Us</strong></h1>
+					
+					<hr>
+					
+					<div class="contact-us-text">
+					</div>
+					<div class="contact-us-info">
+						<p class="note">Barrie Radiator &amp; Muffler<br>
+						172 Wentworth St. E.<br>
+						Oshawa, Ontario<br>
+						L1H 3V5</p>
+						<p>Call us: <a href="tel:9054341633">(905)434-1633</a></p>
+						<p>Email us:<a href="mailto:">email@email.ca</a></p>
+					</div>
+
+					<p class="note">!!NOTE!!: I can add google maps integtion; which just shows you a small map of the location and surround area. I will need to sign up for a google maps developer account, not an issue, just something i haven't gotten around to doing. if you feel you don't need it, or if you feel that you absolutly can't live without it please let me know, and I will react accordingly. 
+					
+				</div>
+				
+				<div id="page-current-sales" hidden>
+				
+					<div>
+					
+						<h1 id="header-current-sales"><strong>Current Sales</strong></h1>
+						
+						<hr>
+						
+						<p class="note">!!NOTE!!: THIS PAGE CAN BE DYNAMIC! I would need you to give me as in depth info a you possibly can for each sale. I can make it so the webpage checks the viewers date, and reference it to the list you made for 'archive'. It is best for the viewers if the website can answer any questions they might have for the sale(s).</p>					
+					</div>
+					
+				</div>
+				
+				<div id="page-current-prices" hidden>
+				
+					<h1 id="header-current-prices"><strong>Current Prices</strong></h1>
+					
+					<hr>
+					
+					<p>Here's a list of our current prices.</p>
+					
+					<ul>
+						<li><strong>Oil Change</strong>: comes with complete check of brakes ??
+							<ul>
+								<li>$65</li>
+							</ul>
+						</li>
+						
+						
+						<li><strong>Air Conditioning</strong>: check ??</strong>
+							<ul>
+								<li>$150</li>
+							</ul>
+						</li>
+					</ul>
+					
+					<p class="note">!!NOTE!!: Anything else? anything you sell, not just services.</p>
+				
+				</div>
+				
+				<div id="page-faq" hidden>
+				
+					<h1 id="header-faq"><strong>FAQ</strong></h1>				
+					
+					
+					<ol>
+						<li><strong>Q</strong>: Can I wait while the work is done? <br>
+							<strong>A</strong>: We don't recommend it, as we don't have a luxurious waiting area like your typical dealership - no expensive couches keep the cost of our services down, and our attention on your vehicle. </li>
+						<li><strong>Q</strong>: How long will it take? <br>
+							<strong>A</strong>: Most jobs can be done in the same day. When you drop off your vehicle, leave us your name and phone number, and we will contact you with next steps as soon as we complete our assessment, before any work is done.</li>
+						<li><strong>Q</strong>: Can I get a ride home? <br>
+							<strong>A</strong>: We offer local drop-off at particular times of the day. Please ask about this service before dropping off your vehicle.</li>
+						<li><strong>??</strong>?? picture of GM</li>
+						<p class="note">!!NEED CLARICATION ON ABOVE!!</p>
+						<li><strong>Q</strong>: How can I verify there was actually a problem with my vehicle? <br>
+							<strong>A</strong>: All damaged or replaced parts are kept for the customers inspection at the end of the job</li>
+					</ol>
+					
+					<p class="note">!!NOTE!!: these can be added at any point, but you really should have a few more, in my opinion. You can also add some pictures here IF YOU WISH.</p>
+				</div>
+				
+				<hr>
+			
+			</div>
+		</main>
+			
+		<footer class="container">
+			<p class="note">!!NOTE!!: I need to speak with you about mailchimp. there will be a form similar to this:</p>
+			<input type="text" placeholder="Enter your Email"><input type="submit" value="subscribe to our mailing list"> note: this form does nothing at the moment
+			<p class="note">It will be used to collect customers emails to send them email reminder (instead of the blog posts you suggested). <a href="https://mailchimp.com/en-ca/pricing/marketing/?currency=CAD" target="_blank">MailChimp has a entirely free service for companies with under 2000 clients</a>. I implore you to check it out, and I will be here for any questions you may have. Just shoot me an email.</p>
+			<h6>Website made by &copy;<a href="http://github.com/kyle-james">Kyle James</a>, 2022</h6>
+		</footer>	
+			
 	</body>
+	
 </html>
